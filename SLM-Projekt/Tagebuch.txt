@@ -1,11 +1,14 @@
 Das erste mal Github genutzt und "eingerichtet". Das hat schon deutlich Zeit gefressen, aber ich glaube (oder hoffe), dass es jetzt funktioniert.
+Github wurde eingerichtet um zukünftige Projekte besser im Blick zu behalten und eventuelle alte Versionen zugreifbar zu machen. Dazu noch, können mehrere Personen an einem Projekt arbeiten und es ist visuell gut erkennbar, wer wann welche Änderungen geamcht hat.
 
 Grobe Zeitplanung (für mich selbst, nicht vorgegeben): 
 KW 34:
 - Github einrichten und etwas mehr vertraut machen.
+- Mit den der Projektaufgabe / den Themen vertraut machen.
 - Eine Vorstellung finden, welche der Themen ich eventuell in angriff nehme.
 
 KW 35: 
 - Wissen, welches Thema ich umsetzen möchte.
-- Wissen ob ich in Gruppen oder alleine arbeiten möchte.
+- Wissen ob ich in einer Gruppe oder alleine arbeiten möchte.
+- Zu dem Thema recherchieren.
 - Eventuell schon mit dem Projekt anfangen.
