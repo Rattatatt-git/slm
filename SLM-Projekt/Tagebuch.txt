@@ -3,9 +3,9 @@ Das erste mal Github genutzt und "eingerichtet". Das hat schon deutlich Zeit gef
 Grobe Zeitplanung (für mich selbst, nicht vorgegeben): 
 KW 34:
 - Github einrichten und etwas mehr vertraut machen.
-- Eine Vorstellung finden, welche der Beispielprojekte ich eventuell in angriff nehme.
+- Eine Vorstellung finden, welche der Themen ich eventuell in angriff nehme.
 
 KW 35: 
-- Wissen, welches Projekt ich umsetzen möchte.
+- Wissen, welches Thema ich umsetzen möchte.
 - Wissen ob ich in Gruppen oder alleine arbeiten möchte.
 - Eventuell schon mit dem Projekt anfangen.
