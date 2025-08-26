@@ -18,4 +18,5 @@ Dieses Projekt ist eine minimale Demonstration, wie ein kleines KI-Sprachmodell 
   python -m venv umgebung
 
 - Aktivieren Sie die gerade erstellte Umgebung:
+  ```bash
   .\umgebung\scripts\activate

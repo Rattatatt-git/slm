@@ -18,3 +18,6 @@ Eintrag KW 35:
 Textklassifikation klingt ganz interessant, wobei ich auch von dem Thema "Sentiment-Analyse" nicht abgeneigt bin. Aber ich gehe erstmal die Textklassifikation an.
 Dank KI (habe chatgpt und AIStudio gefragt) fange ich jetzt mit Textklassifikation an. Einrichtung der Umgebung und ein dummer Tippfehler meinerseits hat mich relativ viel Zeit gekostet.
 10:12Uhr: Erstes tatsächlich funktionierendes Programm. Man kann im Terminal schriftlich die Fragen stellen und sie werden (je nach komplexität und slang) gut erkannt. Mal sehen ob man da noch mehr verbesser kann, ohne dass das Programm unnötig komplizierter wird. 
+
+NOTE:
+Ich muss mich damit auseinander setzen, ob ich die KI noch "präziser" oder etwas dergleichen machen kann... Wenn man Anfragen "dumm" schreibt, Sie beleidigt oder sonstiges, weis sie natürlich nicht, zu welcher Kategorie oder so das gehört. Gleiches gilt für grobe Rechtschreibfehler.
