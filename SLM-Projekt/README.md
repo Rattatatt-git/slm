@@ -22,6 +22,6 @@ Dieses Projekt ist eine minimale Demonstration, wie ein kleines KI-Sprachmodell 
   ```bash
   .\umgebung\scripts\activate
 
-  Für macOS / Linux:
+Für macOS / Linux:
   ```bash
   source umgebung/bin/activate
