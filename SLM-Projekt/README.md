@@ -15,4 +15,7 @@ Dieses Projekt ist eine minimale Demonstration, wie ein kleines KI-Sprachmodell 
 - Es wird empfohlen, eine virtuelle Umgebung zu verwenden, um die Projekt-Bibliotheken sauber zu isolieren.
 - Geben Sie den folgenden Befehl in das VS Code Terminal ein und drücken Sie Enter:
   ```bash
-  python -m venv .venv
+  python -m venv umgebung
+
+- Aktivieren Sie die gerade erstellte Umgebung:
+  .\umgebung\scripts\activate
