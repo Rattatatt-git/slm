@@ -11,4 +11,9 @@ KW 35:
 - Wissen, welches Thema ich umsetzen möchte.
 - Wissen ob ich in einer Gruppe oder alleine arbeiten möchte.
 - Zu dem Thema recherchieren.
-- Eventuell schon mit dem Projekt anfangen.
+- Eventuell schon mit dem Projekt anfangen. 
+
+
+Eintrag KW 35: 
+Textklassifikation klingt ganz interessant, wobei ich auch von dem Thema "Sentiment-Analyse" nicht abgeneigt bin. Aber ich gehe erstmal die Textklassifikation an.
+Dank KI (habe chatgpt und AIStudio gefragt) fange ich jetzt mit Textklassifikation an. Einrichtung der Umgebung und ein dummer Tippfehler meinerseits hat mich relativ viel Zeit gekostet.
