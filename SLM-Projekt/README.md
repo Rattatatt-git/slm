@@ -17,8 +17,7 @@ Dieses Projekt ist eine minimale Demonstration, wie ein kleines KI-Sprachmodell 
   ```bash
   python -m venv umgebung
 
-- Aktivieren Sie die gerade erstellte Umgebung:
-  Für Windows:
+- Aktivieren Sie die gerade erstellte Umgebung für Windows:
   ```bash
   .\umgebung\scripts\activate
 
