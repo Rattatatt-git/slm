@@ -21,3 +21,5 @@ Dank KI (habe chatgpt und AIStudio gefragt) fange ich jetzt mit Textklassifikati
 
 NOTE:
 Ich muss mich damit auseinander setzen, ob ich die KI noch "präziser" oder etwas dergleichen machen kann... Wenn man Anfragen "dumm" schreibt, Sie beleidigt oder sonstiges, weis sie natürlich nicht, zu welcher Kategorie oder so das gehört. Gleiches gilt für grobe Rechtschreibfehler.
+
+Test blabla
