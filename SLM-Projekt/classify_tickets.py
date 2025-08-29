@@ -77,24 +77,49 @@ if __name__ == "__main__":
             absicht = absicht_ergebnis['labels'][0]
             print(f"   > Stufe 2 (Absicht): '{absicht}'")
 
-            # === STUFE 3: Intelligente Themen-Auswahl basierend auf Stufe 1 & 2 ===
+                        # === STUFE 3: VERBESSERTE, intelligente Themen-Auswahl ===
             finale_kategorien = []
+
+            # Regel 1: Positives Feedback ist immer eindeutig.
             if stimmung == 'positive':
-                finale_kategorien = ["Positives Feedback & Lob"]
-            elif absicht == "Eine Frage stellen" and stimmung != 'negative':
-                finale_kategorien = ["Anleitung & Bedienungsfrage", "Rechnung & Finanzen", "Profil & Datenverwaltung"]
-            elif absicht == "Ein Problem melden":
-                finale_kategorien = ["Technischer Fehler: Absturz", "Technischer Fehler: Funktion", "Login & Passwort Problem"]
-            elif stimmung == 'negative': # Alles andere, das negativ ist, ist Kritik
-                finale_kategorien = ["Kritik & Verbesserungsvorschlag", "Kritik an Support & Personal"]
-            else: # Fallback für alles andere
+                finale_kategorien.append("Positives Feedback & Lob")
+            
+            # Regel 2: Wenn ein Problem gemeldet wird, wähle aus den Problem-Kategorien.
+            if "Problem" in absicht:
+                finale_kategorien.extend([
+                    "Technischer Fehler: Absturz", 
+                    "Technischer Fehler: Funktion", 
+                    "Login & Passwort Problem"
+                ])
+            
+            # Regel 3: Wenn eine Frage gestellt wird, wähle aus den Frage-Kategorien.
+            if "Frage" in absicht:
+                finale_kategorien.extend([
+                    "Anleitung & Bedienungsfrage", 
+                    "Rechnung & Finanzen", 
+                    "Profil & Datenverwaltung"
+                ])
+            
+            # Regel 4: Wenn negatives Feedback gegeben wird, wähle aus den Kritik-Kategorien.
+            if "Feedback" in absicht and stimmung == 'negative':
+                finale_kategorien.extend([
+                    "Kritik & Verbesserungsvorschlag",
+                    "Kritik an Support & Personal"
+                ])
+
+            # Regel 5 (Fallback): Wenn nach allen Regeln keine Kategorien gefunden wurden
+            # (z.B. bei Spam oder unklaren Fällen), nimm alle als letzte Möglichkeit.
+            if not finale_kategorien:
                 finale_kategorien = list(KATEGORIEN.keys())
 
+            # Entferne Duplikate, falls eine Kategorie in mehreren Listen war
+            # (z.B. wenn jemand ein Problem in Frageform meldet)
+            finale_kategorien = list(dict.fromkeys(finale_kategorien))
+            
+            print(f"   > Stufe 3 (Vorauswahl): Wähle aus {len(finale_kategorien)} relevanten Kategorien.")
+
             # === Finale Klassifizierung mit dem Themen-Experten ===
-            if finale_kategorien:
-                finales_ergebnis = themen_classifier(user_input, finale_kategorien, multi_label=False)
-                bester_label = finales_ergebnis['labels'][0]
-                bester_score = finales_ergebnis['scores'][0]
-                print(f"   > Stufe 3 (Thema): '{bester_label}' (Sicherheit: {bester_score:.2%})")
-            else:
-                print("   > Stufe 3 (Thema): Konnte keine passenden Kategorien finden.")
+            finales_ergebnis = themen_classifier(user_input, finale_kategorien, multi_label=False)
+            bester_label = finales_ergebnis['labels'][0]
+            bester_score = finales_ergebnis['scores'][0]
+            print(f"--> FINALES ERGEBNIS: '{bester_label}' (Sicherheit: {bester_score:.2%})")

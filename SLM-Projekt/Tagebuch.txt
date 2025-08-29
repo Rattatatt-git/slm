@@ -30,3 +30,7 @@ Die KI erkennt aber immernoch nicht so gut, um welche Kategorien etc es sich han
 
 Ich habe viele KI Modelle ausprobiert... eine teilweise schlechter als die andere :D. Aber was ist nicht beachtet habe: KI-Modelle miteinander kombinieren und Anfragen "vorfiltern" ... 
 Wenn man AIStudio nach verschiedenen KI Modellen fragt, will er teilweise Modelle nutzen die nicht funktionieren oder veraltet sind oder sonstiges - da muss man / sollte man denn selbst schnell ins Netz gehen und sich das entsprechende KI Modell einfach selbst raussuchen.
+
+FAZIT für den Freitag (29.08.): 
+Mit einer KI zu arbeiten um ein Programm zu schreiben, was wiederum KI Modelle verwenden soll ist gar nicht einfach... und mit einer KI zu diskutieren wie sie was umsetzen soll ist auch nicht einfach :D. 
+Aber ich habe jetzt eine Version 2.0 die mit 2 KI Modellen (SENTIMENT_MODELL = "oliverguhr/german-sentiment-bert" und ZEROSHOT_MODELL = "MoritzLaurer/mDeBERTa-v3-base-mnli-xnli") funktioniert.
