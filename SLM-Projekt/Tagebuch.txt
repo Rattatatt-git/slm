@@ -22,4 +22,6 @@ Dank KI (habe chatgpt und AIStudio gefragt) fange ich jetzt mit Textklassifikati
 NOTE:
 Ich muss mich damit auseinander setzen, ob ich die KI noch "präziser" oder etwas dergleichen machen kann... Wenn man Anfragen "dumm" schreibt, Sie beleidigt oder sonstiges, weis sie natürlich nicht, zu welcher Kategorie oder so das gehört. Gleiches gilt für grobe Rechtschreibfehler.
 
-Test blabla
+KW 35 - Tag 2:
+KI verbessern / sensibler machen, Kategorien erweitern um mehr abzudecken etc. 
+Ich habe an eine grafische Oberfläche oder etwas dergleichen gedacht, da die Ausgabe im Terminal unübersichtlich werden könnte - allerdings ist die Projektaufgabe ja wirklich "nur" "die Nutzung eines kleinen KI-Modells" und so wie die Ausgabe jetzt ist, ist es gefordert: minimalistisch.

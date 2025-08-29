@@ -1,19 +1,26 @@
 # -----------------------------------------------------------------------------
 # Projekt: Automatische Klassifizierung von Support-Tickets (Interaktive Version)
-# Modell:  MoritzLaurer/mDeBERTa-v3-base-mnli-xnli (Zero-Shot Classification)
-# Zweck:   Interaktive Demonstration für die Projektaufgabe
+# Modell:  MoritzLaurer/mDeBERTa-v3-base-mnli-xnli
+# Zweck:   Demonstration mit verbesserten, beschreibenden Kategorien
 # -----------------------------------------------------------------------------
 
 from transformers import pipeline
 
-# --- KONFIGURATION ---
-TICKET_KATEGORIEN = ["Technisches Problem", "Rechnungsfrage", "Account-Hilfe", "Allgemeines Feedback"]
+# --- KONFIGURATION (mit verbesserten Kategorien) ---
+TICKET_KATEGORIEN = [
+    "Technischer Fehler / Bug (Etwas funktioniert nicht wie erwartet, z.B. Absturz, Fehlermeldung, Button ohne Funktion)",
+    "Frage zur Bedienung / Feature (Anfrage, wie man eine bestimmte Funktion nutzt oder ob es ein Feature gibt)",
+    "Rechnung & Zahlung (Fragen zu Rechnungsbeträgen, Zahlungsstatus, Abonnements)",
+    "Login & Passwort (Probleme beim Anmelden, Passwort vergessen oder zurücksetzen)",
+    "Stammdaten & Profil (Benutzername, E-Mail-Adresse oder persönliche Informationen ändern)",
+    "Feedback & Vorschläge (Lob, Kritik oder Ideen für neue Funktionen)",
+    "Sonstige Anfrage (Das Anliegen passt in keine der anderen Kategorien)"
+]
 MODELL_NAME = "MoritzLaurer/mDeBERTa-v3-base-mnli-xnli"
 
 # --- FUNKTIONEN ---
 def initialisiere_klassifikator():
     print(f"Lade das Klassifizierungsmodell '{MODELL_NAME}'...")
-    print("Hinweis: Der erste Start kann einige Minuten dauern, da das Modell heruntergeladen wird.")
     try:
         classifier = pipeline("zero-shot-classification", model=MODELL_NAME)
         print("Modell erfolgreich geladen! Das Programm ist jetzt startklar.\n")
@@ -33,24 +40,19 @@ if __name__ == "__main__":
 
     if ticket_classifier:
         print("="*60)
-        print("    Interaktiver Support-Ticket-Klassifikator")
+        print("    Interaktiver Support-Ticket-Klassifikator (Version 1.1)")
         print("="*60)
         print("Geben Sie eine Support-Anfrage ein, um sie zu klassifizieren.")
-        print("Mögliche Kategorien sind:", TICKET_KATEGORIEN)
         print("Geben Sie 'exit' ein, um das Programm zu beenden.")
         print("-" * 60)
 
-        # Diese Schleife läuft unendlich, bis der Benutzer 'exit' eingibt
         while True:
-            # Auf eine Eingabe des Benutzers warten
             user_input = input("\nIhre Anfrage: ")
 
-            # Prüfen, ob das Programm beendet werden soll
             if user_input.lower() == 'exit':
                 print("Programm wird beendet. Auf Wiedersehen!")
                 break
             
-            # Klassifikation für die Benutzereingabe durchführen
             ergebnis = klassifiziere_text(ticket_classifier, user_input, TICKET_KATEGORIEN)
             
             if ergebnis:

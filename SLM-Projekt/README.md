@@ -24,3 +24,11 @@ Dieses Projekt ist eine minimale Demonstration, wie ein kleines KI-Sprachmodell 
 - Für macOS / Linux:
   ```bash
   source umgebung/bin/activate
+
+- Installieren Sie die erforderlichen Libraries aus den requirements:
+  ```bash
+  pip install -r requirements.txt
+
+- Starten Sie die Anwendung mit folgendem Befehl: 
+  ```bash
+  python classify_tickets.py
