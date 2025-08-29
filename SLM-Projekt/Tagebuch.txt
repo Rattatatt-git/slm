@@ -25,3 +25,5 @@ Ich muss mich damit auseinander setzen, ob ich die KI noch "präziser" oder etwa
 KW 35 - Tag 2:
 KI verbessern / sensibler machen, Kategorien erweitern um mehr abzudecken etc. 
 Ich habe an eine grafische Oberfläche oder etwas dergleichen gedacht, da die Ausgabe im Terminal unübersichtlich werden könnte - allerdings ist die Projektaufgabe ja wirklich "nur" "die Nutzung eines kleinen KI-Modells" und so wie die Ausgabe jetzt ist, ist es gefordert: minimalistisch.
+Ich habe AIStudio um noch mehr Kategorien und mehr Schlüsselwörter gebeten um alles noch ein wenig Präziser zu machen - einige Anfragen bzw. anders formulierte Anfragen werden etwas schlecht erkannt. 
+Die KI erkennt aber immernoch nicht so gut, um welche Kategorien etc es sich handelt... mal schauen was man mit AIStudio noch rausholen kann.
