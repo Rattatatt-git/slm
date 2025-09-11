@@ -36,12 +36,14 @@ Dieses Projekt ist eine minimale Demonstration, wie ein kleines KI-Sprachmodell 
   ```
 
 ### 4. Interaktion mit dem Programm
+
 Nachdem Sie den Befehl `py classify_tickets.py` ausgeführt haben, passiert Folgendes:
 
 1.  **Modelle werden geladen:** Das Programm beginnt damit, die benötigten KI-Modelle herunterzuladen (nur beim allerersten Start) und zu laden. Dies kann je nach Internetverbindung einige Minuten dauern. Sie sehen im Terminal entsprechende Lade-Meldungen.
 
 2.  **Programm ist startklar:** Sobald alles geladen ist, erscheint eine Startmeldung und das Programm wartet auf Ihre Eingabe. Sie erkennen das an der Zeile:
-    ```    Ihre Anfrage: 
+    ```
+    Ihre Anfrage: 
     ```
 
 3.  **Anfragen testen:** Geben Sie jetzt einfach eine beliebige Support-Anfrage ein (z.B., "Ich habe mein Passwort vergessen und kann mich nicht mehr einloggen") und drücken Sie Enter.
