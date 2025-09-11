@@ -37,6 +37,13 @@ Aber ich habe jetzt eine Version 2.0 die mit 2 KI Modellen (SENTIMENT_MODELL = "
 
 
 KW 37: 
-10.9.: Ich habe mal Perplexity dazu gezogen und um hilfe gebeten. 
+10.9.: 
+Ich habe mal Perplexity dazu gezogen und um hilfe gebeten. 
 Der Code sieht soweit ganz okay aus, aber es müssen noch ein paar Probleme hier und dort beseitigt werden... Aber zufrieden, war ich bisher mit KEINEM Code, da alle immer sehr unpräzise bzw. katastrophale antworten gegeben haben... 
 Das Problem würde man natürlich umgehen können, wenn man kein "small-Model" nimmt... aber mal sehen, was ich die Tage noch so rauskitzeln kann, denn etwas Zeit habe ich ja noch.
+11.9.:
+Heute habe befasse ich mich mit der Dokumentation... Damit tu ich mich übrigens am schwersten! 
+Etwas KI, etwas selbst formulieren und so weiter... 
+Ich habe dazu auch einmal die ganze "umgebung" gelöscht und alles nochmal neu gemacht (nach Anleitung in der README) und habe festgestellt, dass ich noch hier und da etwas anpassen musste. Entdeckt - erledigt. 
+Am Code selbst werde ich vermutlich nicht mehr viel ändern... aber die PDF, Doku etc etc muss noch erstellt/verfeinert werden.
+ABER: Wir haben (nach heute) noch 2x 45min (vielleicht sogar 3x45min), vielleicht überarbeite ich den Code doch noch... :D
