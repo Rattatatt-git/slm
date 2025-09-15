@@ -47,3 +47,7 @@ Etwas KI, etwas selbst formulieren und so weiter...
 Ich habe dazu auch einmal die ganze "umgebung" gelöscht und alles nochmal neu gemacht (nach Anleitung in der README) und habe festgestellt, dass ich noch hier und da etwas anpassen musste. Entdeckt - erledigt. 
 Am Code selbst werde ich vermutlich nicht mehr viel ändern... aber die PDF, Doku etc etc muss noch erstellt/verfeinert werden.
 ABER: Wir haben (nach heute) noch 2x 45min (vielleicht sogar 3x45min), vielleicht überarbeite ich den Code doch noch... :D
+
+Aufgaben für nächste Woche: 
+Einige Kommentare (die zur Fehlerbehebung etc im Code waren) entfernen um den Code etwas "hübscher" zu machen. Eventuelle kleine, letzte Änderungen noch vornehmen und alles abgabefähig machen. 
+Natürlich die Word Datei zur PDF machen und alles als ZIP oder so an Sven schicken.

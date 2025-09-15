@@ -21,7 +21,7 @@ import re
 import sys
 
 # ---------------- KONFIGURATION ----------------
-SENTIMENT_MODEL = "oliverguhr/german-sentiment-bert"  # liefert POSITIVE/NEGATIVE/NEUTRAL
+SENTIMENT_MODEL = "oliverguhr/german-sentiment-bert" 
 ZEROSHOT_MODEL = "MoritzLaurer/mDeBERTa-v3-base-mnli-xnli"
 
 # Finale Kategorien (deutsche Labels)
@@ -157,8 +157,7 @@ def final_decision(zeroshot_pipe, text: str, candidates, keyword_override=None):
             top_label = labels[0]
             top_score = scores[0]
             if top_label == keyword_override or top_score < FINAL_CONFIDENCE_THRESHOLD:
-                return keyword_override, 0.0, True  # True -> Keyword-Override verwendet
-        # Falls top is different and confident, return that
+                return keyword_override, 0.0, True
         return top_label, top_score, False
 
     # Normaler Ablauf: Zero-shot über die Kandidaten (multi_label -> wir nehmen bestes)
@@ -228,5 +227,3 @@ if __name__ == '__main__':
             print(f"--> FINALES ERGEBNIS: '{final_label}' (Sicherheit: {final_score:.2%})")
 
         print("-"*60)
-
-# Ende

@@ -46,11 +46,10 @@ Nachdem Sie den Befehl `py classify_tickets.py` ausgeführt haben, passiert Folg
     Ihre Anfrage: 
     ```
 
-3.  **Anfragen testen:** Geben Sie jetzt einfach eine beliebige Support-Anfrage ein (z.B., "Ich habe mein Passwort vergessen und kann mich nicht mehr einloggen") und drücken Sie Enter.
+3.  **Anfragen testen:** Geben Sie jetzt einfach eine beliebige Support-Anfrage ein (z.B., "Wie hoch ist meine Rechnung?" oder "Welchen Betrag muss ich überweisen?") und drücken Sie Enter.
 
 4.  **Ergebnis ansehen:** Die KI analysiert Ihren Text und gibt das Ergebnis direkt im Terminal aus. Sie sehen, welche Kategorie mit welcher Sicherheit erkannt wurde.
 
 5.  **Beenden des Programms:** Um das Programm zu beenden, geben Sie einfach das Wort `exit` ein und drücken Sie Enter.
 
 Viel Spaß beim Testen!
-```
